@@ -3,6 +3,7 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password_confirmation = document.getElementById('password-confirmation');
+const number = document.getElementById('number');
 const form_fields = [username, email, password, password_confirmation];
 
 // Check required fields
@@ -17,7 +18,7 @@ function checkRequired(inputArr) {
  return validated;
 }
 
-// Show input error message
+//. Show input error message
 function showError(input, message) {
   const formControl = input.parentElement;
   formControl.className = 'form-control error';
